@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="playersign">
+            <div class="player1sign ">
+                <span>Player 1</span>
+                <img id="cross-img" src="./images/cross.svg" alt="">
+            </div>
+            <div class="player2sign">
+                <span>Player 2</span>
+                <img id="circle-img" src="./images/circle.svg" alt="">
+            </div>
+        </div>
+        <div class="sudokuBox">
+            <div id="display-result" class="display-none">
+                <div class="result-img">
+                </div>
+                <span></span>
+
+            </div>
+            <div class="squareboard ">
+                <div class="mat"></div>
+                <div class="mat"></div>
+                <div class="mat"></div>
+                <div class="mat"></div>
+                <div class="mat"></div>
+                <div class="mat"></div>
+                <div class="mat"></div>
+                <div class="mat"></div>
+                <div class="mat"></div>
+            </div>
+        </div>
+        <div class="options">
+            <button>Start game</button>
+        
+        </div>
+        <div class="turn display-none">
+            <img id="turn-cross"  src="./images/cross.svg" alt="">
+            <img id="turn-circle" class="display-none" src="./images/circle.svg" alt="">
+            <span>Turn</span>
+        </div>
+    </div>
+    
+    <script src="./logic.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #14bdac;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.playersign{
+    margin-top: 20px;
+    display: flex;
+    padding: 10px;
+    width: 80%;
+}
+
+.player1sign{
+    margin: 4px;
+    height: 40px;
+    flex: 1;
+    background-color:#202124;
+    border-radius: 10px;
+    color: rgb(186, 211, 211);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.border-niche{
+    border-bottom: solid #4C4C6D 5px;
+}
+
+.player2sign{
+    margin: 4px;
+    height: 40px;
+    flex: 1;
+    background-color:#202124;
+    border-radius: 10px;
+    color: rgb(186, 211, 211);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#cross-img{
+    height: 40px;
+    filter: invert(.5) sepia(1) hue-rotate(180deg);
+}
+#circle-img{
+    
+    height: 25px;
+    filter: invert(.5) sepia(1) hue-rotate(180deg);
+    
+}
+
+.sudokuBox{
+    margin-top: 30px;
+    
+    height: 50vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+}
+
+.squareboard{
+    background-color: #0da192;
+    height: 50vh;
+    width: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+.mat{
+
+    background-color: #14bdac;
+}
+
+.options{
+    margin-top: 20px;
+    /* height: vh; */
+    background-color: #202124;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    /* padding-top: 10px; */
+}
+.options > button{
+    height: 30px;
+    /* padding: 4px; */
+    margin: 10px;
+    color: #14bdac;
+    background-color: #202124;
+    border: 0;
+    font-size: large;
+    font-weight: 900;
+}
+.turn{
+    margin-top: 10px;
+    height: 15vh;
+    /* background-color: red; */
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#turn-cross {
+    height: 80%;
+}
+#turn-circle{
+    height: 60%;
+    margin-bottom: 4px;
+}
+
+.turn > span{
+    font-size: 1.5em;
+    font-weight: 900;
+    
+}
+.display-none{
+    display: none;
+}
+
+.mat>img{
+    
+    width: 90px;
+}
+
+.bg-img-cross{
+    background-image: url('./images/cross.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 95%;
+    background-origin: content-box;
+}
+.bg-img-circle{
+    background-image: url('./images/circle.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    background-origin: content-box;
+}
+
+#display-result{
+    background-color: #14bdac;
+    height: 50vh;
+    width: 50vh;
+}
+.result-img{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.result-cross-img{
+    background-image: url('./images/cross.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+}
+.result-circle-img {
+    background-image: url('./images/circle.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+.result-draw-img{
+    background-image: url('./images/draw.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+
+#display-result > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
