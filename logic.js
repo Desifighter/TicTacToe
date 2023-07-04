@@ -82,7 +82,7 @@ function emptyBoxs() {
 
 
 function winresult(params) {
-    if (arr[0]===arr[1]&&arr[0]===arr[1]) {
+    if (arr[0]===arr[1]&&arr[0]===arr[2]) {
         
         setTimeout(function () {
             displaywinners(arr[0]);
