@@ -24,6 +24,7 @@ document.querySelector("button").addEventListener("click",function () {
 
     document.querySelector(".result-img").classList.remove("result-circle-img");
     document.querySelector(".result-img").classList.remove("result-draw-img");
+    document.querySelector(".result-img").classList.remove("result-cross-img");
 
     document.querySelector("#display-result > span").innerHTML = "";
 
