@@ -22,6 +22,11 @@ document.querySelector("button").addEventListener("click",function () {
     document.querySelector(".squareboard").classList.remove("display-none");
     document.querySelector("#display-result").classList.add("display-none");
 
+    document.querySelector(".result-img").classList.remove("result-circle-img");
+    document.querySelector(".result-img").classList.remove("result-draw-img");
+
+    document.querySelector("#display-result > span").innerHTML = "";
+
     gamestart = true;
     alternate = true;
     count = 0;
@@ -90,6 +95,7 @@ function winresult(params) {
         },1000);
     } 
     else if(arr[3]===arr[4]&&arr[4]===arr[5]){
+        
         setTimeout(function () {
             displaywinners(arr[3]);
             
@@ -97,6 +103,7 @@ function winresult(params) {
         
     }
     else if(arr[6]===arr[7]&&arr[7]===arr[8]){
+        
         setTimeout(function () {
             displaywinners(arr[6]);
             
@@ -104,6 +111,7 @@ function winresult(params) {
         
     }
     else if(arr[0]===arr[3]&&arr[3]===arr[6]){
+
         setTimeout(function () {
             displaywinners(arr[0]);
             
@@ -111,6 +119,7 @@ function winresult(params) {
     
     }
     else if(arr[1]===arr[4]&&arr[4]===arr[7]){
+
         setTimeout(function () {
             displaywinners(arr[1]);
             
@@ -118,6 +127,7 @@ function winresult(params) {
     
     }
     else if(arr[2]===arr[5]&&arr[5]===arr[8]){
+
         setTimeout(function () {
             displaywinners(arr[2]);
             
@@ -125,6 +135,7 @@ function winresult(params) {
         
     }
     else if(arr[0]===arr[4]&&arr[4]===arr[8]){
+
         setTimeout(function () {
             displaywinners(arr[0]);
             
@@ -132,6 +143,7 @@ function winresult(params) {
         
     }
     else if(arr[6]===arr[4]&&arr[4]===arr[2]){
+       
         setTimeout(function () {
             displaywinners(arr[6]);
             
@@ -140,6 +152,7 @@ function winresult(params) {
     }
     else if(params===9){
         setTimeout(function () {
+          
             displaywinners(45);
             
         },1000);
